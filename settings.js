@@ -83,10 +83,10 @@ settings.hintAlign = "left";
 
 (function() {
     var nums = "456";
-    mapkey('<Ctrl-u>f', "#1Open a link (for numpad)", function () {
+    mapkey('^f', "#1Open a link (for numpad)", function () {
         Hints.create("", Hints.dispatchMouseClick, {debugitos_characters: nums});
     });
-    mapkey('<Ctrl-u>C', '#1Open a link in non-active new tab (for numpad)', function() {
+    mapkey('^C', '#1Open a link in non-active new tab (for numpad)', function() {
         Hints.create("", Hints.dispatchMouseClick, {tabbed: true, active: false, debugitos_characters: nums});
     });
 }());
