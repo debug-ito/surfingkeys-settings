@@ -51,6 +51,9 @@ vmap('<Ctrl-l>', 'zz');
 
 settings.smoothScroll = false;
 
+Hints.characters = "asdfghjkl;";
+settings.hintAlign = "left";
+
 // set theme
 settings.theme = `
 .sk_theme {
