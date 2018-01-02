@@ -38,6 +38,16 @@ iunmap('<Alt-f>');
 iunmap('<Alt-d>');
 iunmap('<Alt-w>');
 
+// visual mode navigatoin
+vmap('<Ctrl-f>', 'l');
+vmap('<Ctrl-b>', 'h');
+vmap('<Ctrl-n>', 'j');
+vmap('<Ctrl-p>', 'k');
+vmap('<Alt-f>', 'w');
+vmap('<Alt-b>', 'b');
+vmap('<Alt->>', 'G');
+vmap('<Alt-<>', 'gg');
+vmap('<Ctrl-l>', 'zz');
 
 settings.smoothScroll = false;
 
