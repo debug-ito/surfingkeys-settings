@@ -38,7 +38,7 @@ iunmap('<Alt-f>');
 iunmap('<Alt-d>');
 iunmap('<Alt-w>');
 
-// visual mode navigatoin
+// visual mode navigation
 vmap('<Ctrl-f>', 'l');
 vmap('<Ctrl-b>', 'h');
 vmap('<Ctrl-n>', 'j');
@@ -51,8 +51,9 @@ vmap('<Ctrl-l>', 'zz');
 
 settings.smoothScroll = false;
 
-Hints.numericHints = true;
-Hints.characters = "asdfghjkl;";
+// Hints.numericHints = true; // This always shows numeric hint labels.
+Hints.characters = "asdfghjkl";
+Hints.scrollKeys = "";
 settings.hintAlign = "left";
 
 // set theme
