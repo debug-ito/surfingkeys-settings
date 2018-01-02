@@ -1,5 +1,20 @@
-
+map('<Ctrl-a>', '0');
+unmap('0');
+map('<Alt-v>', 'e');
+unmap('e');
+map('<Ctrl-v>', 'd');
+map('<Alt-<>', 'gg');
+unmap('gg');
+map('<Alt->>', 'G');
+unmap('G');
 map('<Ctrl-n>', 'j');
+map('<Ctrl-f>', 'l');
+map('<Ctrl-b>', 'h');
+map('<Ctrl-e>', '$');
+unmap('$');
+
+map('<Ctrl-z><Ctrl-p>', 'E');
+unmap('E');
 
 settings.smoothScroll = false;
 
