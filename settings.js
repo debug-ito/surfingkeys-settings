@@ -66,7 +66,7 @@ settings.hintAlign = "left";
     };
     var default_characters = null;
     Hints.create = function(_x, _y, attrs) {
-        if("debugitos_characters" in attrs) {
+        if(attrs !== null && typeof(attrs) === "object" && ("debugitos_characters" in attrs)) {
             default_characters = Hints.characters;
             Hints.characters = attrs["debugitos_characters"];
         }
