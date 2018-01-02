@@ -1,3 +1,4 @@
+// Navigation
 map('<Ctrl-a>', '0');
 unmap('0');
 map('<Alt-v>', 'e');
@@ -14,13 +15,17 @@ map('<Ctrl-b>', 'h');
 map('<Ctrl-e>', '$');
 unmap('$');
 
+// Tabs
 map('h', 'E');
 map('l', 'R');
 
+// History
 map('B', 'S');
 unmap('S');
 map('F', 'D');
 unmap('D');
+
+// Reload
 map('R', 'r');
 unmap('r');
 
