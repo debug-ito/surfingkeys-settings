@@ -43,6 +43,8 @@ vmap('<Ctrl-f>', 'l');
 vmap('<Ctrl-b>', 'h');
 vmap('<Ctrl-n>', 'j');
 vmap('<Ctrl-p>', 'k');
+vmap('<Ctrl-e>', '$');
+vmap('<Ctrl-a>', '0');
 vmap('<Alt-f>', 'w');
 vmap('<Alt-b>', 'b');
 vmap('<Alt->>', 'G');
