@@ -14,8 +14,15 @@ map('<Ctrl-b>', 'h');
 map('<Ctrl-e>', '$');
 unmap('$');
 
-map('<Ctrl-z><Ctrl-p>', 'E');
-unmap('E');
+map('h', 'E');
+map('l', 'R');
+
+map('B', 'S');
+unmap('S');
+map('F', 'D');
+unmap('D');
+map('R', 'r');
+unmap('r');
 
 settings.smoothScroll = false;
 
