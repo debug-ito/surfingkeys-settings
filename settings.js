@@ -24,6 +24,16 @@ unmap('D');
 map('R', 'r');
 unmap('r');
 
+// Disable insert mode binding because it's handled by Gtk+
+iunmap('<Ctrl-e>');
+iunmap('<Ctrl-f>');
+iunmap('<Ctrl-u>');
+iunmap('<Alt-b>');
+iunmap('<Alt-f>');
+iunmap('<Alt-d>');
+iunmap('<Alt-w>');
+
+
 settings.smoothScroll = false;
 
 // set theme
