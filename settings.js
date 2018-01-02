@@ -1,4 +1,6 @@
 
+map('<Ctrl-n>', 'j');
+
 settings.smoothScroll = false;
 
 // set theme
