@@ -8,6 +8,7 @@ unmap('gg');
 map('<Alt->>', 'G');
 unmap('G');
 map('<Ctrl-n>', 'j');
+map('<Ctrl-p>', 'k');
 map('<Ctrl-f>', 'l');
 map('<Ctrl-b>', 'h');
 map('<Ctrl-e>', '$');
