@@ -9,6 +9,8 @@ map('gt', 'T');
 // an example to remove mapkey `Ctrl-i`
 unmap('<Ctrl-i>');
 
+settings.smoothScroll = false;
+
 // set theme
 settings.theme = `
 .sk_theme {
