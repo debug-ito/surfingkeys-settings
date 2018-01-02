@@ -53,10 +53,43 @@ vmap('<Ctrl-l>', 'zz');
 
 settings.smoothScroll = false;
 
-// Hints.numericHints = true; // This always shows numeric hint labels.
+// Hints settings
 Hints.characters = "asdfghjkl";
 Hints.scrollKeys = "";
 settings.hintAlign = "left";
+
+(function() {
+    /// Add hooks to Hints so that we can modify Hints.characters ad-hoc.
+    var orig = {
+        create: Hints.create,
+        exit: Hints.exit
+    };
+    var default_characters = null;
+    Hints.create = function(_x, _y, attrs) {
+        if("debugitos_characters" in attrs) {
+            default_characters = Hints.characters;
+            Hints.characters = attrs["debugitos_characters"];
+        }
+        orig.create.apply(this, arguments);
+    };
+    Hints.exit = function() {
+        if(default_characters !== null) {
+            Hints.characters = default_characters;
+            default_characters = null;
+        }
+        orig.exit.apply(this, arguments);
+    };
+}());
+
+(function() {
+    var nums = "456";
+    mapkey('<Ctrl-u>f', "#1Open a link (for numpad)", function () {
+        Hints.create("", Hints.dispatchMouseClick, {debugitos_characters: nums});
+    });
+    mapkey('<Ctrl-u>C', '#1Open a link in non-active new tab (for numpad)', function() {
+        Hints.create("", Hints.dispatchMouseClick, {tabbed: true, active: false, debugitos_characters: nums});
+    });
+}());
 
 // set theme
 settings.theme = `
