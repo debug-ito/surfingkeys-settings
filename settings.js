@@ -51,6 +51,7 @@ vmap('<Ctrl-l>', 'zz');
 
 settings.smoothScroll = false;
 
+Hints.numericHints = true;
 Hints.characters = "asdfghjkl;";
 settings.hintAlign = "left";
 
