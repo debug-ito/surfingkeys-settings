@@ -54,7 +54,7 @@ vmap('<Ctrl-l>', 'zz');
 settings.smoothScroll = false;
 
 // Search settings
-addSearchAliasX('D', 'duckduckgo HTML', 'https://duckduckgo.com/html/?q=', 's', 'https://duckduckgo.com/ac/?q=', function(response) {
+addSearchAliasX('D', 'ddgH', 'https://duckduckgo.com/html/?q=', 's', 'https://duckduckgo.com/ac/?q=', function(response) {
     var res = JSON.parse(response.text);
     return res.map(function(r){
         return r.phrase;
